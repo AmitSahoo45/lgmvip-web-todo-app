@@ -1,0 +1,139 @@
+.todoapp-box {
+    width: 80vw;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    background: var(--color3);
+    border-radius: 5px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.todoapp-box h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.todoapp-inputarea {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.todoapp-inputarea input {
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    font-size: 1rem;
+    margin: 0 0.5rem 0 0;
+    border: none;
+    outline: none;
+    font-family: var(--Open-Sans);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.todoapp-addtask {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: #FFFFFF;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.todoapp-addtask svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.todoapp-addtask:hover svg {
+    transform: translateX(5px) rotate(90deg);
+}
+
+.todoapp-addtask:hover span {
+    transform: translateX(7px);
+}
+
+.todoapp-todolistbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todo {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    color: #FFFFFF;
+    background: #2980b9;
+    background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);
+    background: linear-gradient(to right, #2c3e50, #2980b9);
+    margin: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    text-align: left;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.todo p {
+    padding-left: 0;
+    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+}
+
+.todo:hover p {
+    padding-left: 0.8rem;
+}
+
+.todo-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.todo-buttons svg {
+    margin-right: 0.6rem;
+}
+
+@media screen and (max-width: 680px) {
+    .todoapp-box h1 {
+        margin: 0.6rem 0;
+    }
+
+    .todoapp-inputarea {
+        flex-direction: column;
+    }
+
+    .todoapp-inputarea input {
+        margin: 0.5rem 0;
+    }
+}
